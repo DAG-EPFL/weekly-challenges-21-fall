@@ -50,7 +50,7 @@ Once conda is installed, you can either perform a simple manual setup with "stan
 1. In the root directory containing the challenges, run `conda env create -f environment.yml` to create the environment (named `dag` by default).
 2. Run `conda activate dag` to activate the environment.
 3. Run `ipython kernel install --user --name=dag` to make the new `dag` environment visible as a kernel in Jupyter.
-4. Run `jupyter notebook` to launch Juptyer, open the challenge notebook and select the `dag` kernel under `Kernel > Change kernel`
+4. Run `jupyter notebook` to launch Juptyer, open the challenge notebook and select the `dag` kernel under `Kernel > Change kernel`.
 
  See this <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file">link</a> for more information on conda environments.
  
