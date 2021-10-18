@@ -45,4 +45,12 @@ Google's <a href="https://colab.research.google.com/">Colab</a> is a similar sol
 
 Install your own local environment with <a href="https://docs.conda.io/en/latest/">conda</a> and edit the notebooks locally. This could be useful for future projects if you haven't done it yet!
 
-Once conda is installed, you can either perform a simple manual setup with "standard" libraries (numpy, scipy, matplotlib, seaborn, pandas, scikit-learn, notebook...), or automatically create a virtual environment using the provided [environment.yml](environment.yml) file (see this <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file">link</a> for a tutorial on how to create an environment from a yml file).
+Once conda is installed, you can either perform a simple manual setup with "standard" libraries (numpy, scipy, matplotlib, seaborn, pandas, scikit-learn, ipython...), or automatically create a virtual environment using the provided [environment.yml](environment.yml) file:
+
+1. In the root directory containing the challenges, run `conda env create -f environment.yml` to create the environment (named `dag` by default).
+2. Run `conda activate dag` to activate the environment.
+3. Run `ipython kernel install --user --name=dag` to make the new `dag` environment visible as a kernel in Jupyter.
+4. Run `jupyter notebook` to launch Juptyer, open the challenge notebook and select the `dag` kernel under `Kernel > Change kernel`
+
+ See this <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file">link</a> for more information on conda environments.
+ 
